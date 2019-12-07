@@ -3,9 +3,10 @@ const WHITESPACE = /\s+/;
 const NUMBER = /^[0-9]+$/;
 const OPERATORS = ['+', '-', '*', '/', '%'];
 
-function isLetter(character) {
-  return LETTER.test(character);
-}
+// function isLetter(character) {
+//   return LETTER.test(character);
+// }
+const isLetter = character => LETTER.test(character);
 
 const isWhitespace = character => WHITESPACE.test(character);
 
