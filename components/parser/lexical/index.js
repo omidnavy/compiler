@@ -1,5 +1,5 @@
 const { isLetter, isWhitespace, isNumber,
-    isParenthesis, isQuote } = require('./identify');
+    isParenthesis, isQuote } = require('../helpers');
 
 const tokenize = input => {
     const tokens = [];
@@ -28,7 +28,7 @@ const tokenize = input => {
 
             tokens.push({
                 type: 'Number',
-                value: parseInt(number, 10)
+                value: +number
             });
 
             continue;
@@ -49,7 +49,7 @@ const tokenize = input => {
         if (isQuote(character)) {
             let string = '';
             while (!isQuote(input[++cursor])) string += input[cursor];
-        
+
             tokens.push({
                 type: 'String',
                 value: string,
