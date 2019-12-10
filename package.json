@@ -9,6 +9,7 @@
   "author": "Omid Navy",
   "license": "ISC",
   "dependencies": {
+    "@babel/generator": "^7.7.4",
     "chalk": "^3.0.0",
     "inquirer": "^7.0.0",
     "lodash": "^4.17.15"
