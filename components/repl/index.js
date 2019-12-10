@@ -1,6 +1,6 @@
 const { prompt } = require('inquirer');
 const chalk = require('chalk');
-const { parseAndEvaluate } = require('./parse-and-evaluate');
+const { parseAndEvaluate } = require('../helpers/parse-and-evaluate');
 
 const askQuestions = () => {
     const questions = [
@@ -27,7 +27,7 @@ const repl = async () => {
 
 if (require.main === module) {
     console.log(chalk.red(
-        `Welcome to the ${chalk.bgYellow('Dropbear')} Programming Language`,
+        `Welcome to the ${chalk.bgYellow('[Omid Navy\'s]')} Programming Language`,
     ));
     repl();
 }

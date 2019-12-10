@@ -4,7 +4,7 @@
   "description": "a programming language for compiler class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./components/repl/index.js"
   },
   "author": "Omid Navy",
   "license": "ISC",
